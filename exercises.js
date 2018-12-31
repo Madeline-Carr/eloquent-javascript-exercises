@@ -1,3 +1,4 @@
+
 //Looping a Triangle 
 function triangle() {
     let tri = "#";
@@ -35,6 +36,7 @@ function fizzBuzz() {
 }
 fizzBuzz();
 
+
 //FizzBuzz
 function fizzBuzzBurp() {
     for (let i = 1; i <= 100; i++) {
@@ -54,3 +56,20 @@ function fizzBuzzBurp() {
     }
 }
 fizzBuzzBurp();
+
+
+//Chess Board
+function checker(size) {
+    board = "";
+    boardSize = size * size;
+    while (board.length < boardSize) {
+        if (board.length % size === 0) board += "\n";
+        board += "#";
+        if (board.length % size === 0) board += "\n";
+        if (board.length < boardSize) board += " ";
+        if (board.length % size === 0) board += "\n";
+    }
+    return board;
+}
+console.log(checker(8));
+
