@@ -1,3 +1,4 @@
+
 //Minimum
 
 function min(x, y) {
@@ -25,4 +26,17 @@ function isEven(num) {
 }
 console.log(isEven(-13));
 
-//
+
+//Bean Counting
+
+function countCharacter(word, char) {
+    let counter = 0;
+    let wordLength = word.length - 1;
+    for (let index = wordLength; index >= 0; index--) {
+        if (word.charAt(index) == char) counter++;
+    }
+    console.log("There are " + counter + " " + char + "'s in " + word + "!");
+}
+
+countCharacter("Bongos are Boss!", "B");
+
