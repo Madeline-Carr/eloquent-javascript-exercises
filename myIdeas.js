@@ -24,3 +24,19 @@ function ticket(speed, speedLimit) {
 }
 ticket(60, otterDaleSpeed);
 ticket(20, briarwoodSpeed);
+
+//To Feed or Not to Feed
+let largeDog = 100;
+let mediumDog = 50;
+let smallDog = 10;
+
+function feedDog(weight, size) {
+    if (weight > size) { console.log("Do not feed.") }
+    else if (weight === size) { console.log("Feed if you wish!") }
+    else if (weight <= size) { console.log("Please feed your pup!") }
+    else console.log("The weight should be a number.");
+}
+feedDog(5, smallDog);
+feedDog(75, mediumDog);
+feedDog(100, largeDog);
+feedDog("a", mediumDog);
