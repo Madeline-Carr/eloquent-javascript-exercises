@@ -1,18 +1,3 @@
-//The sum of a range
-function sumOfRange(start, end, step = 1) {
-    let arrayOfNumbers = [];
-    let counter = 0;
-    for (let index = start; index <= end; index++) {
-        counter += step;
-        arrayOfNumbers.push(counter);
-    }
-    return arrayOfNumbers;
-}
-//Uses the default step
-console.log(sumOfRange(1, 6));
-//Has its own step
-console.log(sumOfRange(1, 6, 2));
-
 //Animal Sounds
 let dogs = ["Golden Retriever", "Pug", "Dalmation"];
 let cats = ["Scottish Fold", "Siamese"];
@@ -31,10 +16,11 @@ let otterDaleSpeed = 45;
 let briarwoodSpeed = 25;
 let buckinghamSpeed = 35;
 
-fucntion ticket(speed, speedLimit){
+function ticket(speed, speedLimit) {
     if (speed > speedLimit) {
-        console.log("You have a ticket for driving " + speed + "mph in a " + speedLimit + "mph zone!");
+        console.log("You have a ticket for driving " + speed + " mph in a " + speedLimit + " mph zone!");
     }
     else console.log("We hope you are having a grand day!");
 }
 ticket(60, otterDaleSpeed);
+ticket(20, briarwoodSpeed);
