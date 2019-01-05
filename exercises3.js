@@ -15,14 +15,27 @@ console.log(sumOfRange(1, 6, 2));
 
 //Reversing an Array
 let myArr = ["1", "2", "3"];
-function reverseArray() {
+function reverseArray(theArray) {
     let reversedArray = [];
-    for (let item of myArr) {
+    for (let item of theArray) {
         reversedArray.unshift(item);
     };
     console.log(reversedArray);
 }
+reverseArray(myArr);
 
-reverseArray();
+let myArr2 = ["1", "2", "3", "4", "5"];
+function reverseArrayInPlace(theArray) {
+    //Gets the number for loop
+    let arrayLength = theArray.length;
+    let halfarrLength = Math.floor((arrayLength / 2));
+    for (i = 0; i < halfarrLength; i++) {
+        let first = theArray[i];
+        let last = theArray[arrayLength - (i + 1)];
+        theArray[i] = last;
+        theArray[arrayLength - (i + 1)] = first;
+    }
+    console.log(myArr2);
+}
+reverseArrayInPlace(myArr2);
 
-//Deep Comparison
