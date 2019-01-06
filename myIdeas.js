@@ -40,3 +40,18 @@ feedDog(5, smallDog);
 feedDog(75, mediumDog);
 feedDog(100, largeDog);
 feedDog("a", mediumDog);
+
+function ohmsLaw(voltage, current, resistance) {
+    if (voltage === 0) {
+        voltage = current * resistance;
+        console.log(voltage);
+    }
+    if (current === 0) {
+        current = voltage / resistance;
+    }
+    if (resistance === 0) {
+        resistance = voltage / current;
+    }
+}
+
+ohmsLaw(0, 2, 12);
