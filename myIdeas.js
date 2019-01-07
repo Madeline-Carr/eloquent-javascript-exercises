@@ -1,3 +1,4 @@
+/*
 //Animal Sounds
 let dogs = ["Golden Retriever", "Pug", "Dalmation"];
 let cats = ["Scottish Fold", "Siamese"];
@@ -55,3 +56,17 @@ function ohmsLaw(voltage, current, resistance) {
 }
 
 ohmsLaw(0, 2, 12);
+*/
+
+let theBood = {
+    name: "maggins",
+    age: 3,
+    size: "large"
+};
+
+for (const key in theBood) {
+    console.log(key); //Prints property names
+    console.log(theBood[key]); //Prints the property value
+    //Note the value can not be theBood.key because the key 
+    //needs to be evaluated first. This can be done wiht the brackets.
+}
