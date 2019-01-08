@@ -1,3 +1,4 @@
+/*
 //The sum of a range
 function sumOfRange(start, end, step = 1) {
     let arrayOfNumbers = [];
@@ -38,5 +39,20 @@ function reverseArrayInPlace(theArray) {
     console.log(myArr2);
 }
 reverseArrayInPlace(myArr2);
-
+*/
 //A List
+
+let myArr = [1, 2, 3];
+
+function arrayToList(arr) {
+    let list = null;
+    for (let i = arr.length - 1; i >= 0; i--) {
+        list = {
+            info: arr[i],
+            next: list,
+        }
+    }
+    return (list);
+}
+
+console.log(arrayToList(myArr));

@@ -57,7 +57,7 @@ function ohmsLaw(voltage, current, resistance) {
 
 ohmsLaw(0, 2, 12);
 */
-
+//For.. in Test
 let theBood = {
     name: "maggins",
     age: 3,
