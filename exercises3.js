@@ -42,7 +42,7 @@ reverseArrayInPlace(myArr2);
 */
 //A List
 
-let myArr = [1, 2, 3];
+let myArr = [1, 2];
 
 function arrayToList(arr) {
     let list = null;
@@ -56,3 +56,12 @@ function arrayToList(arr) {
 }
 
 console.log(arrayToList(myArr));
+
+function prepend(info, list) {
+    return {
+        info: info,
+        next: list
+    };
+}
+let list = arrayToList(myArr);
+console.log(prepend(0, list));
