@@ -56,7 +56,7 @@ function ohmsLaw(voltage, current, resistance) {
 }
 
 ohmsLaw(0, 2, 12);
-*/
+
 //For.. in Test
 let theBood = {
     name: "maggins",
@@ -67,6 +67,19 @@ let theBood = {
 for (const key in theBood) {
     console.log(key); //Prints property names
     console.log(theBood[key]); //Prints the property value
-    //Note the value can not be theBood.key because the key 
+    //Note the value can not be theBood.key because the key
     //needs to be evaluated first. This can be done wiht the brackets.
 }
+
+*/
+
+//
+function spelledBackwards(string) {
+    let backString = "";
+    for (i = string.length - 1; i >= 0; i--) {
+        backString += string[i];
+    }
+    console.log(backString);
+}
+spelledBackwards("Maddie");
+spelledBackwards("Dog");
